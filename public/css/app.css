@@ -1,11 +1,54 @@
-html body {
+body {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font: 16px Arial, Helvetica, sans-serif; }
+
+ul {
+  list-style-type: none; }
 
 #top {
   float: left;
   width: 100%;
+  margin: 0px; }
+  #top #logo {
+    float: left;
+    margin-left: 20px; }
+    #top #logo a {
+      text-decoration: none;
+      color: black; }
+    #top #logo h1 {
+      line-height: 50px;
+      font-size: 1.5em;
+      margin: 0px;
+      padding: 0px; }
+    #top #logo h2 {
+      display: none; }
+  #top #top-menus {
+    float: right;
+    margin-right: 20px; }
+    #top #top-menus a {
+      text-decoration: none; }
+    #top #top-menus #main-menu {
+      float: right; }
+    #top #top-menus #main-menu ul li {
+      display: inline; }
+    #top #top-menus #lang-menu {
+      float: right; }
+    #top #top-menus #lang-menu ul li {
+      display: inline; }
+    #top #top-menus #login-menu {
+      float: right; }
+    #top #top-menus #login-menu ul li {
+      display: inline; }
+
+#content {
+  float: left;
   height: 100%;
-  background-color: #FF4848; }
+  width: 100%; }
+
+.map {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
 
 /*# sourceMappingURL=app.css.map */
