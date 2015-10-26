@@ -1,4 +1,9 @@
 @extends('layout.default')
 @section('content')
-    home...
+    <div id="map" class="map"></div>
+    <script>
+    	$(window).bind("load", function() {
+			initMap();
+		}); 
+	</script>
 @stop
