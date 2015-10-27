@@ -1,9 +1,8 @@
 @extends('layout.default')
 @section('content')
-    <div id="map" class="map"></div>
-    <script>
-    	$(window).bind("load", function() {
-			initMap();
-		}); 
-	</script>
+	<div ng-app="mapApp">
+		<div np-controller="mapController">
+    		<div id="map"></div>
+    	</div>
+    </div>
 @stop
