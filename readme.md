@@ -6,9 +6,9 @@ The goal of this project it to create a collaborative web platform and mobile ap
 
 This project is at the development stage.
 
-### Tools/Frameworks used for development
+### Tools/Frameworks/Api's used for development
 
-Laravel5, PostgreSQL/postGIS, AngularJS, OpenLayers3
+Laravel5, PostgreSQL/postGIS, AngularJS, OpenLayers3, OSM
 
 ### License
 

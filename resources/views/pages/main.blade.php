@@ -1,7 +1,7 @@
 @extends('layout.default')
 @section('content')
 	<div ng-app="mapApp">
-		<div np-controller="mapController">
+		<div ng-controller="initMapController">
     		<div id="map"></div>
     	</div>
     </div>
