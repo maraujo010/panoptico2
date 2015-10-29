@@ -9,12 +9,21 @@ use View;
 class FrontPagesController extends Controller
 {
     /**
-     * Display the main page view
+     * Display the 'home' page view
      *     
      */
-    public function index()
+    public function home()
     {
-		return View::make('pages.main');
+		return View::make('pages.home');
+    }
+    
+    /**
+     * Display the 'about' page view
+     *
+     */
+    public function about()
+    {
+    	return View::make('pages.about');
     }
 
 }

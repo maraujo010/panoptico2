@@ -3,10 +3,9 @@
 Homestead.yaml
 Homestead.json
 .env
-composer.json~
-.gitignore~
 .project
 .buildpath
 /.settings
 /.externalToolBuilders
 /public/js/dev
+*~
