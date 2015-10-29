@@ -17,8 +17,8 @@
 	        </ul>
 	    </div>
 	    <div id="main-menu">
-	        <ul>	            
-	            <li><a href="/about">About</a></li>
+	        <ul>	  	        	
+	        	<li>{!! Html::panLinkRoute('about', Lang::get('links.about')) !!}</li>          	            
 	            <li><a href="/blog">Blog</a></li>
 	            <li><a href="/supportus">Support Us</a></li>
 	        </ul>
