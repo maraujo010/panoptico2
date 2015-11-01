@@ -8,7 +8,7 @@ This project is at the development stage.
 
 ### Tools/Frameworks/Api's used for development
 
-Laravel5, PostgreSQL/postGIS, AngularJS, OpenLayers3, OSM
+Laravel5, PostgreSQL/postGIS, AngularJS, UI Bootstrap, OpenLayers3, OSM
 
 ### License
 

@@ -1,6 +1,6 @@
 <div id="top">
 	<div id="logo">
-		<h1><a href="">Panóptico</a></h1>		
+		<h1><a href="">Panopticon</a></h1>		
 		<h2><a href="">Observatório da vigilância electrónica em espaços públicos</a></h2> 
 	</div>
 	<div id="top-menus">

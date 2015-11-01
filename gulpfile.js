@@ -8,6 +8,7 @@ var config = {
 
 elixir(function(mix) {
 	mix.sass('app.scss');
+
 });	
 	
 if (config.production) {
@@ -15,37 +16,28 @@ if (config.production) {
 		mix.scripts([
 			'libs/openlayers/ol.js',
 			'./node_modules/angular/angular.min.js',
-			'mapApp/app.js',
-			'mapApp/Services/dataService.js',
-			'mapApp/Controllers/mapHelper/initMapController.js',
+			'angularApp/app.js',
+			'angularApp/Services/dataService.js',
+			'angularApp/Controllers/mapHelper/initMapController.js',
 		], './public/js/all.js');		
 	});
 }
 else {
 	elixir(function(mix) {
 				
+		
 		mix.copy(
-			      'resources/assets/js/libs/openlayers/ol.js',
+			      'resources/assets/js/angularApp/app.js',
 			      'public/js/dev/'
 			    );
 		
 		mix.copy(
-			      'node_modules/angular/angular.min.js',
+			      'resources/assets/js/angularApp/Controllers/mapHelper/',
 			      'public/js/dev/'
 			    );
 		
 		mix.copy(
-			      'resources/assets/js/mapApp/app.js',
-			      'public/js/dev/'
-			    );
-		
-		mix.copy(
-			      'resources/assets/js/mapApp/Controllers/mapHelper/',
-			      'public/js/dev/'
-			    );
-		
-		mix.copy(
-			      'resources/assets/js/mapApp/Services/',
+			      'resources/assets/js/angularApp/Services/',
 			      'public/js/dev/'
 			    );
 		
