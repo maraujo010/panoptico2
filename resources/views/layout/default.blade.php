@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="mapApp">
+<html ng-app="panApp">
 <head>
     @include('includes.head')
 </head>

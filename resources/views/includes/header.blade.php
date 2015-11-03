@@ -1,27 +1,32 @@
-<div id="top">
-	<div id="logo">
-		<h1><a href="">Panopticon</a></h1>		
-		<h2><a href="">Observatório da vigilância electrónica em espaços públicos</a></h2> 
+<div class="navbar navbar-default navbar-fixed-top" ng-controller="navBarController">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button"  class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Panopticon</a>
+        </div>
+		<div class="collapse navbar-collapse" collapse="navbarCollapsed">
+			<ul class="nav navbar-nav navbar-right">
+            	<li class="active">{!! Html::panLinkRoute('about', Lang::get('links.about')) !!}</li>       
+            	<li dropdown>
+	              	<a href="#" dropdown-toggle>User<span class="caret"></span></a>
+	              	<ul class="dropdown-menu">		             	
+	    	            <li><a href="#">Login</a></li>
+	        	        <li><a href="#">Register</a></li>	            	    
+	       			</ul>
+            	</li>        
+            	<li dropdown>
+	              	<a href="#" dropdown-toggle>Lang<span class="caret"></span></a>
+	              	<ul class="dropdown-menu">		             	
+	    	            <li><a href="#">PT</a></li>
+	        	        <li><a href="#">EN</a></li>	            	    
+	       			</ul>
+            	</li>                        	
+          	</ul>
+		</div>
 	</div>
-	<div id="top-menus">
-		<div id="lang-menu">
-	        <ul>            
-	            <li><a href="/projects">EN</a></li>
-	            <li><a href="/contact">PT</a></li>
-	        </ul>
-	    </div>	    	    
-	    <div id="login-menu">
-	        <ul>            
-	            <li><a href="/login">Login</a></li>
-	            <li><a href="/signup">Create an Account</a></li>
-	        </ul>
-	    </div>
-	    <div id="main-menu">
-	        <ul>	  	        	
-	        	<li>{!! Html::panLinkRoute('about', Lang::get('links.about')) !!}</li>          	            
-	            <li><a href="/blog">Blog</a></li>
-	            <li><a href="/supportus">Support Us</a></li>
-	        </ul>
-	    </div>
-    </div>
 </div>

@@ -37,6 +37,11 @@ else {
 			    );
 		
 		mix.copy(
+			      'resources/assets/js/angularApp/Controllers/navBar/',
+			      'public/js/dev/'
+			    );
+		
+		mix.copy(
 			      'resources/assets/js/angularApp/Services/',
 			      'public/js/dev/'
 			    );

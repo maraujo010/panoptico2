@@ -6,8 +6,9 @@
   },
   "dependencies": {
     "angular": "^1.4.7",
-    "angular-module-animate": "^1.2.19",
+    "angular-animate": "^1.4.7",
     "angular-ui-bootstrap": "^0.14.3",
+    "bootstrap-sass": "^3.3.5",
     "laravel-elixir": "^3.0.0"
   }
 }
