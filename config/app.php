@@ -53,7 +53,7 @@ return [
     */
 
     'locale' => 'en',
-	'locales' => ['en' => 'English', 'pt' => 'Portuguese'],
+	
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -112,7 +112,8 @@ return [
 
         /*
          * Laravel Framework Service Providers...
-         */
+         */ 
+    	Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
         Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
@@ -201,6 +202,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
     	'Html' 		=> Illuminate\Html\HtmlFacade::class,
     	'Form' 		=> Illuminate\Html\FormFacade::class,
+    	'LaravelLocalization'   => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class
 
     ],
 

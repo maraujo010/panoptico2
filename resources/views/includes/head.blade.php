@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>Panopticon</title>
+<title>Panopticon: {{ trans('titles.main') }}</title>
 {!! Html::style('css/app.css') !!}
 <!-- {!! Html::script('js/all.js') !!} -->
 <!-- BEGIN dev angular App -->

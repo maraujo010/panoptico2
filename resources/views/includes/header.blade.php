@@ -7,7 +7,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Panopticon</a>
+			<h1><a class="navbar-brand" href="#">Panopticon</a></h1>
         </div>
 		<div class="collapse navbar-collapse" collapse="navbarCollapsed">
 			<ul class="nav navbar-nav navbar-right">

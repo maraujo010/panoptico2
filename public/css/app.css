@@ -5991,6 +5991,13 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+h1 {
+  margin: 0px;
+  padding: 0px; }
+  h1 a {
+    font-weight: bold;
+    font-size: 1.0 em !important; }
+
 #map {
   height: 100%;
   width: 100%;
