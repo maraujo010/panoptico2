@@ -7,26 +7,25 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 			</button>
-			<h1><a class="navbar-brand" href="#">Panopticon</a></h1>
-        </div>
+			<h1><a class="navbar-brand" href="/">Panopticon</a></h1>
+        </div>       
 		<div class="collapse navbar-collapse" collapse="navbarCollapsed">
-			<ul class="nav navbar-nav navbar-right">
-            	<li class="active">{!! Html::panLinkRoute('about', Lang::get('links.about')) !!}</li>       
+			<ul class="nav navbar-nav navbar-right">				
+            	<li>{!! Html::panLinkRoute('about', Lang::get('links.about')) !!}</li>
+            	<li><a href="">Login</a></li>
+            	<li>{!! Html::panLinkRoute('signup', Lang::get('titles.signup')) !!}</li>              	                     	 
             	<li dropdown>
-	              	<a href="#" dropdown-toggle>User<span class="caret"></span></a>
-	              	<ul class="dropdown-menu">		             	
-	    	            <li><a href="#">Login</a></li>
-	        	        <li><a href="#">Register</a></li>	            	    
+	              	<a href="#" dropdown-toggle>{{ Lang::get('titles.selectedLang') }}<span class="caret"></span></a>
+	              	<ul class="dropdown-menu">
+	              	@foreach (LaravelLocalization::getSupportedLocales() as  $localeCode => $properties )
+				    	@if ($localeCode!= LaravelLocalization::getCurrentLocale() ) 
+		    				<li><a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">{{ Lang::get('titles.selectedLang', array(), $localeCode) }}</a></li>	 
+		      			@endif      
+		    		@endforeach		             		    	                   	        	            	   
 	       			</ul>
-            	</li>        
-            	<li dropdown>
-	              	<a href="#" dropdown-toggle>Lang<span class="caret"></span></a>
-	              	<ul class="dropdown-menu">		             	
-	    	            <li><a href="#">PT</a></li>
-	        	        <li><a href="#">EN</a></li>	            	    
-	       			</ul>
-            	</li>                        	
+            	</li>                    	                      	
           	</ul>
-		</div>
+		</div>	 		    		    		  	
 	</div>
 </div>
+

@@ -7,5 +7,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 	Route::get('/', 'FrontPagesController@home');			
 	Route::get(LaravelLocalization::transRoute('routes.about'),'FrontPagesController@about');
     
+	
 			
 });
+

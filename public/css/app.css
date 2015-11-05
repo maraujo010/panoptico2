@@ -5991,12 +5991,21 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* custom bootstrap styles */
+.navbar-brand {
+  margin-left: -55px !important;
+  font-weight: bold;
+  font-size: 0.625em; }
+  .navbar-brand:hover {
+    color: #9f3a3a !important; }
+
+.navbar-right {
+  margin-right: -50px; }
+
+/* app styles */
 h1 {
   margin: 0px;
   padding: 0px; }
-  h1 a {
-    font-weight: bold;
-    font-size: 1.0 em !important; }
 
 #map {
   height: 100%;

@@ -1,13 +1,26 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+/* custom bootstrap styles */
+
+
+.navbar-brand {
+	margin-left: -55px !important;	
+	font-weight:bold;
+	font-size: 0.625em;	
+	&:hover {
+        color:#9f3a3a !important;
+    }
+}
+
+.navbar-right { 
+    margin-right: -50px;
+}
+
+/* app styles */
+
 h1 {
 	margin:0px;
 	padding:0px;
-	
-	a {
-		font-weight:bold;
-		font-size: 1.071 em !important;		
-	}
 }
 
 #map {
