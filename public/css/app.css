@@ -5993,14 +5993,10 @@ button.close {
 
 /* custom bootstrap styles */
 .navbar-brand {
-  margin-left: -55px !important;
   font-weight: bold;
   font-size: 0.625em; }
   .navbar-brand:hover {
     color: #9f3a3a !important; }
-
-.navbar-right {
-  margin-right: -50px; }
 
 /* app styles */
 h1 {
@@ -6008,6 +6004,7 @@ h1 {
   padding: 0px; }
 
 #map {
+  background-color: red;
   height: 100%;
   width: 100%;
   overflow: hidden; }

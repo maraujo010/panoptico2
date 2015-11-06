@@ -4,7 +4,6 @@
 
 
 .navbar-brand {
-	margin-left: -55px !important;	
 	font-weight:bold;
 	font-size: 0.625em;	
 	&:hover {
@@ -12,9 +11,6 @@
     }
 }
 
-.navbar-right { 
-    margin-right: -50px;
-}
 
 /* app styles */
 
@@ -24,6 +20,7 @@ h1 {
 }
 
 #map {
+	background-color:red;
 	height: 100%;
 	width: 100%;
 	overflow:hidden;
