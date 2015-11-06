@@ -12,8 +12,8 @@
 		<div class="collapse navbar-collapse" collapse="navbarCollapsed">
 			<ul class="nav navbar-nav navbar-right">				
             	<li>{!! Html::panLinkRoute('about', Lang::get('links.about')) !!}</li>
-            	<li style="background-color:blue;height:30px;"><a href="">Login</a></li>
-            	<li>{!! Html::panLinkRoute('signup', Lang::get('titles.signup')) !!}</li>              	                     	 
+            	<li class="nav-item-left-border"><a href="">Login</a></li>
+            	<li class="nav-item-right-border">{!! Html::panLinkRoute('signup', Lang::get('titles.signup')) !!}</li>              	                     	 
             	<li dropdown>
 	              	<a href="#" dropdown-toggle>{{ Lang::get('titles.selectedLang') }}<span class="caret"></span></a>
 	              	<ul class="dropdown-menu">

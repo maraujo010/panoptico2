@@ -5998,15 +5998,36 @@ button.close {
   .navbar-brand:hover {
     color: #9f3a3a !important; }
 
+.navbar-nav {
+  margin-top: 10px !important; }
+
+.navbar-nav > li > a {
+  line-height: 0px !important; }
+
 /* app styles */
 h1 {
   margin: 0px;
   padding: 0px; }
 
 #map {
-  background-color: red;
   height: 100%;
   width: 100%;
   overflow: hidden; }
+
+.nav-item-left-border {
+  border: 1px solid #ccc;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+.nav-item-right-border {
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px; }
 
 /*# sourceMappingURL=app.css.map */
