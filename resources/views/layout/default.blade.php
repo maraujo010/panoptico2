@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="panApp">
+<html lang="{{ LaravelLocalization::getCurrentLocale() }}" ng-app="panApp">
 <head>
     @include('includes.head')
 </head>
