@@ -2,6 +2,8 @@
 
 return [
 
-    'about' => 'sobre'    
+    'about' => 'sobre',
+	'suportus' => 'apoianos',
+	'collaborate' => 'colabora'
 
 ];

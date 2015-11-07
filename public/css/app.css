@@ -6014,6 +6014,9 @@ h1 {
   width: 100%;
   overflow: hidden; }
 
+.signinup:hover {
+  background-color: #d0d0d0; }
+
 .nav-item-left-border {
   border: 1px solid #ccc;
   -moz-border-radius-topleft: 2px;

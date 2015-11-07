@@ -33,14 +33,18 @@ h1 {
 	overflow:hidden;
 }
 
+$signinupBg-color: #d0d0d0;
+
+.signinup:hover {
+	background-color: $signinupBg-color;
+}
 
 .nav-item-left-border {
 	border: 1px solid #ccc;		
 	-moz-border-radius-topleft: 2px;
     -moz-border-radius-bottomleft: 2px;
     border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;                 
-	
+    border-bottom-left-radius: 2px;                 	
 }
 
 .nav-item-right-border {	                
@@ -52,3 +56,4 @@ h1 {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
+
