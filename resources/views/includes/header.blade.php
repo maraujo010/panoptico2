@@ -14,7 +14,7 @@
 			    <li>{!! Html::panLinkRoute('about', Lang::get('links.about')) !!}</li>
             	<li>{!! Html::panLinkRoute('supportus', Lang::get('links.supportus')) !!}</li>
             	<li>{!! Html::panLinkRoute('collaborate', Lang::get('links.collaborate')) !!}</li>
-            	<li class="nav-item-left-border signinup"><a href="">Login</a></li>
+            	<li class="nav-item-left-border signinup">{!! Html::panLinkRoute('login', Lang::get('links.login')) !!}</li>
             	<li class="nav-item-right-border signinup">{!! Html::panLinkRoute('signup', Lang::get('links.signup')) !!}</li>              	                     	 
             	<li dropdown>
 	              	<a href="#" dropdown-toggle> {{ Lang::get('links.selectedLang') }}<span class="caret"></span></a>

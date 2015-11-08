@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDevicetypesTable extends Migration
+class CreatePhotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,9 @@ class CreateDevicetypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('devicetypes', function (Blueprint $table) {
+        Schema::create('photos', function (Blueprint $table) {
             $table->increments('id');
+	    $table->integer('device_id');
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ class CreateDevicetypesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('devicetypes');
+        Schema::drop('photos');
     }
 }
