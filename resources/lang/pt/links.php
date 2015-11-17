@@ -3,7 +3,7 @@
 return [
 
     'about' => 'Sobre',
-	'signup' => 'Criar uma Conta',
+	'register' => 'Criar Conta',
 	'login' => 'Login',
 	'selectedLang' => 'Português / Portuguese',
 	'collaborate' => 'Colabora',

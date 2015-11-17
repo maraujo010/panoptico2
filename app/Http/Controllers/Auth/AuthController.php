@@ -62,4 +62,12 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+    
+    /* overrided foundation method  */
+    public function getRegister()
+    {
+    	return view('auth.register', ['pagetitle' =>  trans('links.register')]);
+    }
+    
+    
 }

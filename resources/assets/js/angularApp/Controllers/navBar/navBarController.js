@@ -3,5 +3,5 @@ angular
     .controller('navBarController', navBarController);
 
 function navBarController($scope) { 
-	$scope.isCollapsed = true;
+	$scope.navbarCollapsed = true;
 }

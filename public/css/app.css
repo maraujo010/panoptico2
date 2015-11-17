@@ -6005,6 +6005,10 @@ button.close {
   line-height: 0px !important; }
 
 /* app styles */
+body {
+  padding-top: 50px;
+  color: #6b6b6b; }
+
 h1 {
   margin: 0px;
   padding: 0px; }
@@ -6032,5 +6036,27 @@ h1 {
   -moz-border-radius-bottomright: 2px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px; }
+
+.page-title {
+  background-color: #9f3a3a; }
+  .page-title h2 {
+    color: white;
+    display: inline;
+    font-size: 1.143em;
+    line-height: 50px;
+    font-weight: bold;
+    margin-left: 15px; }
+
+.register-content {
+  padding-top: 50px; }
+  .register-content .register-form {
+    padding-right: 15px; }
+  .register-content .register-text {
+    line-height: 1.8;
+    border-left: 1px solid #e7e7e7;
+    margin-top: 20px; }
+    .register-content .register-text p {
+      margin-top: -8px;
+      margin-bottom: -5px; }
 
 /*# sourceMappingURL=app.css.map */

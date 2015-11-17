@@ -1,4 +1,4 @@
-@extends('layout.default')
+@extends('layout.main')
 @section('content')
 	<div>
 		<div ng-controller="initMapController">
