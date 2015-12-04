@@ -7,6 +7,8 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
+
 
 class AuthController extends Controller
 {
@@ -21,7 +23,7 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    use AuthenticatesAndRegistersUsers, ThrottlesLogins;        
 
     /**
      * Create a new authentication controller instance.
@@ -56,6 +58,7 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
+    	    		
         return User::create([
             'nickname' => $data['nickname'],
             'email' => $data['email'],
@@ -69,5 +72,26 @@ class AuthController extends Controller
     	return view('auth.register', ['pagetitle' =>  trans('links.register')]);
     }
     
+    /* overridden foundation method  */
+    public function getLogin()
+    {    	
+    	return view('auth.login', ['pagetitle' =>  trans('links.login')]);    	
+    }
+    
+    /* overridden foundation method  */
+    public function postRegister(Request $request)
+    {
+    	$validator = $this->validator($request->all());
+    
+    	if ($validator->fails()) {
+    		$this->throwValidationException(
+    				$request, $validator
+    				);
+    	}
+    
+    	$user = $this->create($request->all());
+    	     	
+    	return view('auth.login', ['pagetitle' =>  trans('links.login'), 'activateMsg'=>trans('messages.activateAccount')]);
+    }
     
 }

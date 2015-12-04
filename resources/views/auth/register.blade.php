@@ -19,8 +19,9 @@
 					<input type="text" name="nickname" class="form-control" value="{{ old('nickname') }}">						
 				</div>		
 				<div class="form-group">
-					<label for="email" class="control-label" placeholder="Email">Email</label>						
-					<input type="email" name="email" class="form-control" value="{{ old('email') }}">						
+					<label for="email" class="control-label" placeholder="Email">Email</label>										
+					<input type="email" name="email" class="form-control" value="{{ old('email') }}">
+					<span>Your e-mail will not be public displayed (see privacy politics)</span>						
 				</div>
 				<div class="form-group">
 					<label for="email_confirmation" class="control-label" placeholder="Email">Email Confirmation</label>						
